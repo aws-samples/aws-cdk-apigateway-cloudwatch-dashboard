@@ -6,16 +6,15 @@ test('API Dashboard Created', () => {
   const app = new cdk.App();
   // WHEN
   const stack = new ApiDashboardStack(app, 'DemoAppApiDashboardStack', {
-    dashboardName: "DemoAppDashboard"
-  });
-  stack.addApi({
-    apiName: "myApi",
-    apiStage: "v1",
-    displayName: "myApi"
+    dashboardName: "DemoAppDashboard",
+    alarmsDashboardName: 'DemoAppAlarmsDashboard',
   });
   // THEN
   expectCDK(stack).to(haveResource("AWS::CloudWatch::Dashboard", {
     DashboardName: "DemoAppDashboard"
+  }));
+  expectCDK(stack).to(haveResource("AWS::CloudWatch::Dashboard", {
+    DashboardName: "DemoAppAlarmsDashboard"
   }));
 });
 
