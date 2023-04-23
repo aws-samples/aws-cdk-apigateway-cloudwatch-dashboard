@@ -11,7 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.128.0",
+    "@aws-cdk/assert": "1.199.0",
     "@types/aws-lambda": "^8.10.84",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
@@ -22,9 +22,9 @@
     "typescript": "~3.9.10"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.128.0",
-    "@aws-cdk/aws-cloudwatch": "1.128.0",
-    "@aws-cdk/aws-lambda": "^1.128.0",
+    "@aws-cdk/aws-apigateway": "^1.199.0",
+    "@aws-cdk/aws-cloudwatch": "1.199.0",
+    "@aws-cdk/aws-lambda": "^1.199.0",
     "@aws-cdk/core": "1.128.0",
     "aws-sdk": "^2.1008.0"
   }
